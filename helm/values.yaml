@@ -1,0 +1,69 @@
+deployment:
+  keycloak-operator: true 
+  reloader: true
+  kubernetes-secret-generator: true
+
+# product info
+product:
+  info:
+    enabled: false
+    data:
+      description: "OneCX Infra"
+      imageUrl: ""
+      iconName: "palette"
+      displayName: "OneCX Infra"
+      basePath: "/infra"
+
+# global configuration
+global:
+  # global host name
+  default_url:
+
+# keycloak configuration    
+keycloak:
+  # Enable or disable route
+  enabled: true
+  # name of the instance
+  name: keycloak
+
+  # Database setup
+  db:
+    # database host name
+    host:
+    # database user
+    user: 
+    # database password
+    password: 
+    # database schema
+    database: 
+    # database port
+    port: 5432
+    
+  # Route
+  routing:
+    # Enable or disable route
+    enabled: false
+
+    # Default URL
+    default_url: "change.com"
+
+    # modified chart name for ingress
+    name: keycloak
+
+    # ingress
+    ingress:
+      # host configuration
+      host:
+        # prio1 if the name is define generate domain <override>.<default_url>
+        override :
+        # prio2 if the name is define generate domain <name>-<release_namespace>.<default_url>
+        name:
+        # else <release_name>-<name of chart_name>-<release_namespace>.<default_url>
+  # keycloak import
+  import:
+    # keycloak realm import
+    realm:
+      # enable or disable realm import
+      enabled: false
+      # import realm data. Export realm convert to yaml and put it here
+      data:
