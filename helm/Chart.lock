@@ -1,0 +1,15 @@
+dependencies:
+- name: helm-product
+  repository: oci://ghcr.io/onecx/charts
+  version: 0.2.0
+- name: keycloak-operator
+  repository: https://charts.adfinis.com
+  version: 1.2.0
+- name: reloader
+  repository: https://stakater.github.io/stakater-charts
+  version: 1.0.107
+- name: kubernetes-secret-generator
+  repository: https://helm.mittwald.de
+  version: 3.4.0
+digest: sha256:d53515e301f9eda0d44ce52ec9204df66470215cad75a6dc5329c7ddcae92595
+generated: "2024-06-17T17:43:05.016568875+02:00"

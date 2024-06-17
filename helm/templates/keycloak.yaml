@@ -1,0 +1,37 @@
+{{- if .Values.keycloak.enabled }}
+apiVersion: k8s.keycloak.org/v2alpha1
+kind: Keycloak
+metadata:
+  name: {{ .Release.Name }}-{{ .Values.keycloak.name }}
+spec:
+  db:
+    vendor: postgres
+    usernameSecret:
+      name: {{ .Release.Name }}-{{ .Values.keycloak.name }}-secret
+      key: usernameSecret
+    passwordSecret:
+      name: {{ .Release.Name }}-{{ .Values.keycloak.name }}-secret
+      key: passwordSecret
+    host: {{ .Values.keycloak.db.host }}
+    database: {{ .Values.keycloak.db.database }}
+    port: {{ .Values.keycloak.db.port }}
+    schema: {{ .Values.keycloak.db.user }}
+    poolInitialSize: 1
+    poolMinSize: 2
+    poolMaxSize: 5
+  http:
+    httpEnabled: true
+  hostname:
+    {{ if .Values.keycloak.routing.ingress.host.override }}
+    hostname: {{ .Values.keycloak.routing.ingress.host.override }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
+    {{ else if .Values.keycloak.routing.ingress.host.name }}
+    hostname: {{ .Values.keycloak.routing.ingress.host.name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
+    {{ else }}
+    hostname: {{ .Release.Name }}-{{ .Values.keycloak.routing.name | default .Chart.Name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}              
+    {{- end }}
+    strict: false
+    strictBackchannel: false
+  additionalOptions:
+      - name: proxy
+        value: reencrypt
+{{- end }}

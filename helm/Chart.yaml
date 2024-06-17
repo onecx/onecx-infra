@@ -1,0 +1,24 @@
+apiversion: v2
+name: onecx-theme
+version: 0.0.0
+appversion: 0.0.0
+dependencies:
+- name: helm-product
+  version: ^0
+  repository: oci://ghcr.io/onecx/charts
+  alias: product
+- name: keycloak-operator
+  alias: keycloak-operator
+  version: ">=0.0.0"
+  repository: https://charts.adfinis.com
+  condition: deployment.keycloak-operator
+- name: reloader
+  alias: reloader
+  version: ">=0.0.0"
+  repository: https://stakater.github.io/stakater-charts
+  condition: deployment.reloader
+- name: kubernetes-secret-generator
+  alias: kubernetes-secret-generator
+  version: ">=0.0.0"
+  repository: https://helm.mittwald.de
+  condition: deployment.kubernetes-secret-generator
