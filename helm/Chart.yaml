@@ -9,7 +9,7 @@ dependencies:
   alias: product
 - name: keycloak-operator
   alias: keycloak-operator
-  version: ">=0.0.0"
+  version: "1.0.3"
   repository: https://charts.adfinis.com
   condition: deployment.keycloak-operator
 - name: reloader
