@@ -39,6 +39,11 @@ keycloak:
     # database port
     port: 5432
     
+    # onecx database operator
+    operator:
+      # enabled or disable onecx databsource operator resource
+      enabled: true
+
   # Route
   routing:
     # Enable or disable route

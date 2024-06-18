@@ -1,0 +1,15 @@
+{{- if .Values.keycloak.enabled }}
+{{ if .Values.keycloak.db.operator.enabled }}
+apiVersion: onecx.tkit.org/v1
+kind: Database
+metadata:
+  name: {{ .Release.Name }}-{{ .Values.keycloak.name }}-db
+spec:
+  host: {{ .Values.keycloak.db.host }}
+  name: {{ .Values.keycloak.db.database }}
+  user: {{ .Values.keycloak.db.user }}
+  password-key: "passwordSecret"
+  password-secrets: {{ .Release.Name }}-{{ .Values.keycloak.name }}-secret
+  schema: {{ .Values.keycloak.db.user }}
+{{- end }}
+{{- end }}
