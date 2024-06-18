@@ -12,4 +12,5 @@ jobs:
   helm:
     uses: onecx/ci-product/.github/workflows/build.yml@v1
     secrets: inherit
-
+    with:
+      addRepoDeps: true
