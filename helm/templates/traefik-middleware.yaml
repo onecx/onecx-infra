@@ -1,0 +1,11 @@
+{{- if .Values.traefik.middleware.auth.enabled }}
+kind: Middleware
+apiVersion: traefik.io/v1alpha1
+metadata:
+  name: {{ include "app.fullname" . }}-auth
+  labels:
+{{ include "app.labels.common" $ | indent 4 }}  
+spec:
+  basicAuth:
+    secret: {{ include "app.fullname" . }}-auth
+{{- end }}

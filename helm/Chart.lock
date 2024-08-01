@@ -11,5 +11,11 @@ dependencies:
 - name: kubernetes-secret-generator
   repository: https://helm.mittwald.de
   version: 3.4.0
-digest: sha256:0bf34f383a2487997fc040a5e0136b1cf3c8aa899de00646f61bef0a047674c1
-generated: "2024-07-23T01:58:27.558770316Z"
+- name: prometheus
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 25.24.1
+- name: jaeger
+  repository: https://jaegertracing.github.io/helm-charts
+  version: 3.1.2
+digest: sha256:60ffdd4347bb6dedaee6fb4f9018e1c805f4a5823fa7d04301290d23d5a2c8ae
+generated: "2024-08-01T15:28:29.776807951+02:00"
