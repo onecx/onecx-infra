@@ -3,7 +3,8 @@ deployment:
   reloader: true
   kubernetes-secret-generator: true
   prometheus: true
-
+  jaeger: true
+  
 # product info
 product:
   info:

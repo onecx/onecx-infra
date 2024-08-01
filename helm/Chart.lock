@@ -14,5 +14,8 @@ dependencies:
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
   version: 25.24.1
-digest: sha256:308f7e6edb285574dba9fe8866da7281f81259ebdc6b4f02207d62a04b1eff75
-generated: "2024-08-01T13:07:35.453911474+02:00"
+- name: jaeger
+  repository: https://jaegertracing.github.io/helm-charts
+  version: 3.1.2
+digest: sha256:60ffdd4347bb6dedaee6fb4f9018e1c805f4a5823fa7d04301290d23d5a2c8ae
+generated: "2024-08-01T15:28:29.776807951+02:00"
