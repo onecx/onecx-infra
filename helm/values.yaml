@@ -2,7 +2,8 @@ deployment:
   keycloak-operator: true 
   reloader: true
   kubernetes-secret-generator: true
-
+  prometheus: true
+  
 # product info
 product:
   info:
@@ -72,3 +73,13 @@ keycloak:
       enabled: false
       # import realm data. Export realm convert to yaml and put it here
       data:
+
+prometheus:
+  alertmanager:
+    enabled: false
+  kube-state-metrics:
+    enabled: false
+  prometheus-node-exporter:
+    enabled: false
+  prometheus-pushgateway:
+    enabled: false

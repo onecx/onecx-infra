@@ -11,5 +11,8 @@ dependencies:
 - name: kubernetes-secret-generator
   repository: https://helm.mittwald.de
   version: 3.4.0
-digest: sha256:0bf34f383a2487997fc040a5e0136b1cf3c8aa899de00646f61bef0a047674c1
-generated: "2024-07-23T01:58:27.558770316Z"
+- name: prometheus
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 25.24.1
+digest: sha256:308f7e6edb285574dba9fe8866da7281f81259ebdc6b4f02207d62a04b1eff75
+generated: "2024-08-01T13:07:35.453911474+02:00"
