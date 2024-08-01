@@ -3,7 +3,7 @@ deployment:
   reloader: true
   kubernetes-secret-generator: true
   prometheus: true
-  
+
 # product info
 product:
   info:
@@ -74,6 +74,14 @@ keycloak:
       # import realm data. Export realm convert to yaml and put it here
       data:
 
+traefik:
+  middleware:
+    auth:
+      # enable or disabel traefik middleware
+      enabled: false
+      # user:password hash
+      users:
+
 prometheus:
   alertmanager:
     enabled: false
@@ -82,4 +90,18 @@ prometheus:
   prometheus-node-exporter:
     enabled: false
   prometheus-pushgateway:
+    enabled: false
+
+jaeger:
+  provisionDataStore:
+    cassandra: false
+  allInOne:
+    enabled: true
+  storage:
+    type: memory
+  agent:
+    enabled: false
+  collector:
+    enabled: false
+  query:
     enabled: false

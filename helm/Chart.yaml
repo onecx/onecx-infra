@@ -27,3 +27,8 @@ dependencies:
   version: ">=0.0.0"
   repository: https://prometheus-community.github.io/helm-charts
   condition: deployment.prometheus
+- name: jaeger
+  alias: jaeger
+  version: ">=0.0.0"
+  repository: https://jaegertracing.github.io/helm-charts
+  condition: deployment.jaeger
