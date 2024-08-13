@@ -7,15 +7,15 @@ dependencies:
   version: 1.0.3
 - name: reloader
   repository: https://stakater.github.io/stakater-charts
-  version: 1.0.119
+  version: 1.0.121
 - name: kubernetes-secret-generator
   repository: https://helm.mittwald.de
   version: 3.4.0
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
-  version: 25.25.0
+  version: 25.26.0
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
   version: 3.1.2
-digest: sha256:c76859147f8778f42c4938d5c7a38d44800a87604949aecc9f4d12df8bc2e1f5
-generated: "2024-08-06T01:59:05.00085292Z"
+digest: sha256:ebb9ca9b34357295cf6f56a5a24f07ea15ee3703b8fade72ac776802eaf40172
+generated: "2024-08-13T02:02:01.215315753Z"
