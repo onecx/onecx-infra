@@ -7,10 +7,10 @@ dependencies:
   version: ^0
   repository: oci://ghcr.io/onecx/charts
   alias: product
-- name: keycloak-operator
+- name: onecx-infra-kc-operator
   alias: keycloak-operator
-  version: "1.0.3"
-  repository: https://charts.adfinis.com
+  version: ">=0.0.0-0"
+  repository: oci://ghcr.io/onecx/charts
   condition: deployment.keycloak-operator
 - name: reloader
   alias: reloader
