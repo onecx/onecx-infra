@@ -125,6 +125,5 @@ grafana:
         url:
         host: prometheus-server
         port: 80
-
   rbac:
     namespaced: true
