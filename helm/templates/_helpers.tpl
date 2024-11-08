@@ -17,6 +17,6 @@ app.kubernetes.io/name: {{ template "app.fullname" $ }}
 {{- if .Values.grafana.ext.datasources.prometheus.url -}}
 {{- .Values.grafana.ext.datasources.prometheus.url -}}
 {{- else -}}
-{{- printf "htt://%s-%s:%d" .Release.Name .Values.grafana.ext.datasources.prometheus.host (.Values.grafana.ext.datasources.prometheus.port | int) -}}
+{{- printf "http://%s-%s:%d" .Release.Name .Values.grafana.ext.datasources.prometheus.host (.Values.grafana.ext.datasources.prometheus.port | int) -}}
 {{- end -}}
 {{- end -}}
