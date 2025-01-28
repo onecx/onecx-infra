@@ -16,9 +16,9 @@ dependencies:
   version: 27.1.0
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
-  version: 3.3.4
+  version: 3.4.0
 - name: grafana
   repository: https://grafana.github.io/helm-charts
-  version: 8.8.4
-digest: sha256:93c642e1348e09fc1a6a93decb579bb000712d2878b28a427b8ad7d24191d42b
-generated: "2025-01-21T02:13:46.102659919Z"
+  version: 8.8.5
+digest: sha256:4f5d2d223fba24e2381df5f05814aa7e7e9c61b7760125bb1461e3624cbb55f6
+generated: "2025-01-28T02:13:33.37155452Z"
