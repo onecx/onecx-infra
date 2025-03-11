@@ -7,7 +7,7 @@ dependencies:
   version: 0.0.0-rc.2
 - name: reloader
   repository: https://stakater.github.io/stakater-charts
-  version: 1.3.0
+  version: 2.0.0
 - name: kubernetes-secret-generator
   repository: https://helm.mittwald.de
   version: 3.4.1
@@ -19,6 +19,6 @@ dependencies:
   version: 3.4.0
 - name: grafana
   repository: https://grafana.github.io/helm-charts
-  version: 8.10.1
-digest: sha256:2940b12dc4e8bfe91bc6c650645ba6b8a78aa37bf397ea764cf8bb7dba839d0e
-generated: "2025-03-04T02:21:12.227393173Z"
+  version: 8.10.3
+digest: sha256:a7b17a0c56b7de749df5a924aa7728ca8ed5c4ffc83b9f5dc733dfd8a7484169
+generated: "2025-03-11T02:22:22.446207832Z"
