@@ -1,7 +1,7 @@
 dependencies:
 - name: helm-product
   repository: oci://ghcr.io/onecx/charts
-  version: 0.2.0
+  version: 0.3.0
 - name: onecx-infra-kc-operator
   repository: oci://ghcr.io/onecx/charts
   version: 0.0.0-rc.2
@@ -13,12 +13,12 @@ dependencies:
   version: 3.4.1
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
-  version: 27.7.0
+  version: 27.7.1
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
   version: 3.4.1
 - name: grafana
   repository: https://grafana.github.io/helm-charts
-  version: 8.10.4
-digest: sha256:d9530fe07aa84c121eb896eab588974d7a9bd83d2b3b7c2c3eb6e27da430d21c
-generated: "2025-03-25T02:25:20.126551076Z"
+  version: 8.11.0
+digest: sha256:e085f8dcbb7cc22a40758a3cea34f92c2dd01895aa8826d1bf8f31103848a967
+generated: "2025-04-01T02:44:54.755107509Z"
