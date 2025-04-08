@@ -13,12 +13,12 @@ dependencies:
   version: 3.4.1
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
-  version: 27.7.1
+  version: 27.8.0
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
   version: 3.4.1
 - name: grafana
   repository: https://grafana.github.io/helm-charts
-  version: 8.11.0
-digest: sha256:e085f8dcbb7cc22a40758a3cea34f92c2dd01895aa8826d1bf8f31103848a967
-generated: "2025-04-01T02:44:54.755107509Z"
+  version: 8.11.3
+digest: sha256:e30e56bc9b09502f3e8a703d5e4fee5048456c09c823d2e6b737b2c2105d1f79
+generated: "2025-04-08T02:26:12.79576378Z"
