@@ -4,7 +4,7 @@ dependencies:
   version: 0.3.0
 - name: onecx-infra-kc-operator
   repository: oci://ghcr.io/onecx/charts
-  version: 0.0.0-rc.3
+  version: 0.0.0-rc.4
 - name: reloader
   repository: https://stakater.github.io/stakater-charts
   version: 2.2.3
@@ -20,5 +20,5 @@ dependencies:
 - name: grafana
   repository: https://grafana.github.io/helm-charts
   version: 10.0.0
-digest: sha256:0b3bdfd1cfde36a5a26b13deba248089bbba94dbb1815976a20a4436b6112c50
-generated: "2025-09-30T09:55:53.856056587Z"
+digest: sha256:dff550c863325dd0a31dfa8ddb4c5a87ea2475682a41db6d57c2a10e41753190
+generated: "2025-09-30T10:09:07.900639368Z"
