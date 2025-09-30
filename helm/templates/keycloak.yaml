@@ -31,7 +31,6 @@ spec:
     {{- end }}
     strict: false
     strictBackchannel: false
-  additionalOptions:
-      - name: proxy
-        value: reencrypt
+  proxy:
+    headers: xforwarded
 {{- end }}
