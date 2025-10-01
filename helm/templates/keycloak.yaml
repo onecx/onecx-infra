@@ -23,14 +23,14 @@ spec:
     httpEnabled: true
   hostname:
     {{ if .Values.keycloak.routing.ingress.host.override }}
-    hostname: {{ .Values.keycloak.routing.ingress.host.override }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
+    hostname: https://{{ .Values.keycloak.routing.ingress.host.override }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
     {{ else if .Values.keycloak.routing.ingress.host.name }}
-    hostname: {{ .Values.keycloak.routing.ingress.host.name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
+    hostname: https://{{ .Values.keycloak.routing.ingress.host.name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
     {{ else }}
-    hostname: {{ .Release.Name }}-{{ .Values.keycloak.routing.name | default .Chart.Name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}              
+    hostname: https://{{ .Release.Name }}-{{ .Values.keycloak.routing.name | default .Chart.Name }}-{{ .Release.Namespace }}.{{ .Values.global.default_url | default .Values.keycloak.routing.default_url }}
     {{- end }}
     strict: false
-    strictBackchannel: false
+    backchannelDynamic: true
   proxy:
     headers: xforwarded
 {{- end }}
