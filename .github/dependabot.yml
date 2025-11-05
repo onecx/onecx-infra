@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "helm"
+    directory: "/helm"
+    schedule:
+      interval: daily
+    labels:
+      - helm
+    allow:
+      - dependency-name: "helm-product"
