@@ -4,7 +4,7 @@ dependencies:
   version: 0.4.0
 - name: onecx-infra-kc-operator
   repository: oci://ghcr.io/onecx/charts
-  version: 1.1.0-rc.8
+  version: 1.1.0-rc.9
 - name: reloader
   repository: https://stakater.github.io/stakater-charts
   version: 2.2.5
@@ -13,12 +13,12 @@ dependencies:
   version: 3.4.1
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
-  version: 27.44.0
+  version: 27.45.0
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
   version: 3.4.1
 - name: grafana
   repository: https://grafana.github.io/helm-charts
   version: 10.1.4
-digest: sha256:4d0c61cb036ce4a07d13fa1d5d4aba175906011a29ce47c1688d2ce91b84b8e2
-generated: "2025-11-07T16:27:49.141874506Z"
+digest: sha256:f172e644fc50ce99e1534bac59e39cf876dc101d508abfd33b319923cb157c34
+generated: "2025-11-10T16:57:46.863034406Z"
