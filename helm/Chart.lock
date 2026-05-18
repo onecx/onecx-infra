@@ -4,21 +4,21 @@ dependencies:
   version: 0.4.0
 - name: onecx-infra-kc-operator
   repository: oci://ghcr.io/onecx/charts
-  version: 1.1.0-rc.10
+  version: 1.1.0
 - name: reloader
   repository: https://stakater.github.io/stakater-charts
-  version: 2.2.5
+  version: 2.2.11
 - name: kubernetes-secret-generator
   repository: https://helm.mittwald.de
   version: 3.4.1
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
-  version: 27.45.0
+  version: 29.7.0
 - name: jaeger
   repository: https://jaegertracing.github.io/helm-charts
-  version: 3.4.1
+  version: 4.8.0
 - name: grafana
   repository: https://grafana.github.io/helm-charts
-  version: 10.1.4
-digest: sha256:b154ef7854d7ee96dddf0d3d330267701b9a45b04062d58aa6a155587ffb0f6d
-generated: "2025-11-12T16:33:00.219273273Z"
+  version: 10.5.15
+digest: sha256:3c6ae471c62a8a4d6cdbd85529faf9bfbd9c09e720df3e0c344b85d31955daf0
+generated: "2026-05-18T09:57:05.228149461Z"
