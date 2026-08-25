@@ -96,18 +96,7 @@ prometheus:
     enabled: false
 
 jaeger:
-  provisionDataStore:
-    cassandra: false
-  allInOne:
-    enabled: true
-  storage:
-    type: memory
-  agent:
-    enabled: false
-  collector:
-    enabled: false
-  query:
-    enabled: false
+  enabled: true
 
 reloader:
   reloader:
