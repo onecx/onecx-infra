@@ -4,6 +4,13 @@ kind: Keycloak
 metadata:
   name: {{ .Release.Name }}-{{ .Values.keycloak.name }}
 spec:
+  {{ if .Values.keycloak.image }}
+  image: {{ .Values.keycloak.image }}
+  {{- end }}
+  {{- if .Values.keycloak.imagePullSecrets }}
+  imagePullSecrets:
+  - name: {{ .Values.keycloak.imagePullSecrets }}
+  {{- end }}
   db:
     vendor: postgres
     usernameSecret:

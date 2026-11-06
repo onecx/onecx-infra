@@ -30,6 +30,12 @@ keycloak:
   # name of the instance
   name: keycloak
 
+  # Keycloak custom image
+  image:
+
+  # Keycloak custom image pull secret
+  imagePullSecrets:
+
   # Database setup
   db:
     # database host name
